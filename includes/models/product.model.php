@@ -9,18 +9,33 @@ class Product{
 		global $db;
 		
 		if($arr['id']){
-			$st = $db->prepare("SELECT * FROM jqm_products WHERE id=:id");
+			$sta = $db->prepare("SELECT * FROM productos WHERE id_producto=:id");
 		}
 		else if($arr['category']){
-			$st = $db->prepare("SELECT * FROM jqm_products WHERE category = :category");
+
+			$sta = $db->prepare("SELECT * FROM productos WHERE id_categoria = :category");
 		}
 		else{
 			throw new Exception("Unsupported property!");
 		}
 		
-		$st->execute($arr);
+		$sta->execute($arr);
 		
-		return $st->fetchAll(PDO::FETCH_CLASS, "Product");
+		return $sta->fetchAll(PDO::FETCH_CLASS, "Product");
+	}
+
+
+	public static function getColorsByProduct($id){
+			global $db;
+		
+
+		$st = $db->prepare("SELECT c.id_color as id, c.detalle as color FROM color_producto cp 
+			INNER JOIN colores c ON c.id_color = cp.id_color WHERE cp.id_producto = :id");
+			$st->execute(array(':id' => $id));
+			$colores=$st->fetchAll(PDO::FETCH_KEY_PAIR);			
+			return $colores;
+			
+
 	}
 }
 

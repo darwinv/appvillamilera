@@ -6,7 +6,8 @@ class HomeController{
 	public function handleRequest(){
 		
 		// Select all the categories:
-		$content = Category::find();
+		//$content = Category::find();
+		
 		
 		render('home',array(
 			'title'		=> 'Villa Milera',

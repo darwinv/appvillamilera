@@ -11,6 +11,8 @@ require_once "includes/helpers.php";
 require_once "includes/models/product.model.php";
 require_once "includes/models/category.model.php";
 require_once "includes/controllers/home.controller.php";
+require_once "includes/controllers/shop.controller.php";
+require_once "includes/controllers/gallery.controller.php";
 require_once "includes/controllers/category.controller.php";
 
 

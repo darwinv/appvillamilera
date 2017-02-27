@@ -1,37 +1,50 @@
-.product i{
-	display:block;
-	font-size:0.8em;
-	font-weight:normal;
-	font-style:normal;
+h2 {
+text-align: center;
+    color:darkgreen;    
 }
 
-.product img{
-	margin:10px;
+h1{
+  font-size: 23px !important;
+font-style: initial;
+font-family: roboto;
+    color: ivory;
+}
+h4{
+font-style: initial;
+font-family: roboto;
+    color: ivory;
+    
+}
+.box{
+    margin:10px;
 }
 
-.product b{
-	position: absolute;
-	right: 15px;
-	top: 15px;
-	font-size: 0.9em;
-}
-
-.product{
-	height: 80px;
-}
-
-
-@media all and (min-width: 650px){
-
-	.rightColumn{
-		width:56%;
-		float:right;
-		margin-left:4%;
-	}
-	
-	.leftColumn{
-		width:40%;
-		float:left;
-	}
+.swipebox img{ /*marco */
+width: 100%;
 
 }
+
+div.incli-izq{
+  -moz-transform: rotate(-7deg);
+  -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
+  transform: rotate(-7deg);
+}
+
+div.incli-der{
+  -moz-transform: rotate(2deg);
+  -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
+  transform: rotate(2deg);
+}
+
+.img-home{  
+    text-align: center;
+}
+.home-content{
+  /*background-image: url("../imgs/palmera.jpg");*/
+}
+
+.ui-grid-b img {
+    margin: auto;
+    width: 90%;
+}
+

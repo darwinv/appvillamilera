@@ -12,10 +12,10 @@ class Category{
 		global $db;
 		
 		if(empty($arr)){
-			$st = $db->prepare("SELECT * FROM jqm_categories");
+			$st = $db->prepare("SELECT * FROM categoria");
 		}
 		else if($arr['id']){
-			$st = $db->prepare("SELECT * FROM jqm_categories WHERE id=:id");
+			$st = $db->prepare("SELECT * FROM categoria WHERE id_categoria=:id");
 		}
 		else{
 			throw new Exception("Unsupported property!");

@@ -9,8 +9,12 @@ require_once "includes/main.php";
 
 try {
 
-	if($_GET['category']){
-		$c = new CategoryController();
+	if(isset($_GET['gallery'])){
+		$c = new GalleryController();
+	}else if(isset($_GET['category'])){
+    $c = new CategoryController();
+	}else if(isset($_GET['shop'])){
+		$c = new ShopController();
 	}
 	else if(empty($_GET)){
 		$c = new HomeController();
