@@ -5,7 +5,7 @@
 <label for="colores"></label>
 <select name="colores" id="colores">
  <?php foreach ($colores as $key => $value):
- echo	'<option value='.$key.'>'. $value. '</option>';
+ echo '<option value='.$key.'>'. $value. '</option>';
  endforeach; ?>
 </select>
 </li>
