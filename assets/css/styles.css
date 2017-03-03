@@ -24,6 +24,18 @@ width: 100%;
 
 }
 
+.hasDatepicker > div{
+  display: inline-block !important;
+}
+
+.ui-datepicker-calendar{
+    background-color: white;    
+}
+
+.ui-datepicker-header {
+ background-color: #FFFFEF;   
+}
+
 div.incli-izq{
   -moz-transform: rotate(-7deg);
   -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */

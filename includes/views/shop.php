@@ -4,8 +4,8 @@
 
      <label for="cedula">Ingrese Cedula:</label>
      <input name="cedula" id="cedula" value="" type="text">
-  	<label for="fecha">  Fecha del Pedido: </label>
-	<input name="fecha"   id="fecha" value=""  type="text"/>
+  	<label for="date-input">  Fecha del Pedido: </label>
+	<input type="text" id="date-input" data-date-format="dd-mm-yy" data-inline="true" data-role="date">
 	
 <label for="submit-2"></label>
 <button class="ui-shadow ui-btn ui-corner-all" onclick="start_pedido();" type="submit" id="submit-2">Proceder</button>
