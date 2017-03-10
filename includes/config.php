@@ -7,7 +7,7 @@ error_reporting(E_ALL ^ E_NOTICE);
 $db_host = 'localhost';
 $db_user = 'root';
 $db_pass = '';
-$db_name = 'mydb';
+$db_name = 'villa_milera_m';
 
 
 /*=========== Website Configuration ==========*/

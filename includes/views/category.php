@@ -12,5 +12,5 @@
         <?php render($categories,array('active'=>$_GET['category'])) ?>
     </ul>
 </div>
-
+<button class="ui-shadow ui-btn ui-corner-all" onclick="start_pedido();" type="submit" id="submit-2">Hacer Pedido</button>
 <?php render('_footer')?>

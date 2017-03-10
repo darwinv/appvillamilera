@@ -60,3 +60,7 @@ div.incli-der{
     width: 90%;
 }
 
+.ui-input-text .ui-mini{
+width: 20% !important;
+display: inline-flex !important;
+}
