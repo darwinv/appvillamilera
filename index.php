@@ -16,6 +16,9 @@ try {
 	}else if(isset($_GET['shop'])){
 		$c = new ShopController();
 	}
+	else if(isset($_GET['social'])){
+		$c = new SocialController();
+	}
 	else if(empty($_GET)){
 		$c = new HomeController();
 	}

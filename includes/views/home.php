@@ -33,7 +33,7 @@
     </div>
     <div class="ui-block-c">
         <div class="ui-bar ui-bar-b" > 
-            <img src="assets/imgs/info.png"> <p><a href="#" class="ui-btn ui-corner-all">Información </a></p>
+            <img src="assets/imgs/info.png"> <p><a href="?social" class="ui-btn ui-corner-all">Información </a></p>
         </div>
     </div>
 </div>
