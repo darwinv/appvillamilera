@@ -9,18 +9,15 @@
 
 	$( '.swipebox' ).swipebox();
 
-
-
-
 } )( jQuery );
 
 
- jQuery('#fecha').datetimepicker({
-			timepicker:false,
-			format:'Y-m-d',
-			formatDate:'Y-m-d',
-			minDate:'-1970/01/02' // yesterday is minimum date
-		}); 
+ // 	jQuery('#fecha').datetimepicker({
+	// 	timepicker:false,
+	// 	format:'Y-m-d',
+	// 	formatDate:'Y-m-d',
+	// 	minDate:'-1970/01/02' // yesterday is minimum date
+	// }); 
 
 
 

@@ -12,7 +12,9 @@ try {
 	if(isset($_GET['gallery'])){
 		$c = new GalleryController();
 	}else if(isset($_GET['category'])){
-    $c = new CategoryController();
+    	$c = new CategoryController();
+	}else if(isset($_GET['detail_quote']) || isset($_GET['send_quote'])){
+    	$c = new DetailController();
 	}else if(isset($_GET['shop'])){
 		$c = new ShopController();
 	}

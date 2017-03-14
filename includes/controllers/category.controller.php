@@ -15,6 +15,8 @@ class CategoryController{
 		
 		// Fetch all the products in this category:
 		$products = Product::find(array('category'=>$_GET['category']));
+
+		
 		
 		// $categories and $products are both arrays with objects
 		
@@ -22,7 +24,7 @@ class CategoryController{
 			'title'			=> 'Viendo '.$cat[0]->nombre,
 			'categories'	=> $categories,
 			'products'		=> $products
-		));		
+		));
 	}
 }
 

@@ -61,6 +61,69 @@ div.incli-der{
 }
 
 .ui-input-text .ui-mini{
-width: 20% !important;
-display: inline-flex !important;
+  width: 20% !important;
+  display: inline-flex !important;
+}
+
+
+
+
+.col-xs-10,.col-xs-2{
+  float: left;
+}
+.col-xs-10 {
+  width: 83.33%;
+}
+.col-xs-2 {
+  width: 16.66%;
+}
+.text-right{
+  text-align: right;
+}
+.text-left{
+  text-align: left;
+}
+.ui-space-normal .ui-btn{
+  white-space: normal;
+}
+
+.message-success{
+  background-color: rgba(177, 243, 132, 0.6) /*{a-bup-background-color} */;
+  border-color: #dddddd /*{a-bup-border}*/;
+  color: #333333 /*{a-bup-color}*/;
+  text-shadow: 0 /*{a-bup-shadow-x}*/ 1px /*{a-bup-shadow-y}*/ 0 /*{a-bup-shadow-radius}*/ #f3f3f3 /*{a-bup-shadow-color}*/;
+  -webkit-border-radius: .3125em /*{global-radii-buttons}*/;
+  border-radius: .3125em /*{global-radii-buttons}*/;
+  font-size: 16px;
+  margin: .5em 0;
+  text-decoration: none;
+  padding: .7em 1em;
+  display: block;
+  position: relative;
+  text-align: center;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  cursor: default;
+  user-select: none;
+}
+
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border: 1px solid transparent;
+    border-radius: 4px;
+    white-space: normal;
+}
+
+.alert-success {
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+.alert-danger {
+    color: #a94442;
+    background-color: #f2dede;
+    border-color: #ebccd1;
 }

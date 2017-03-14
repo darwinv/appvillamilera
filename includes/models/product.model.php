@@ -37,6 +37,60 @@ class Product{
 			
 
 	}
+
+
+	public static function insertQuote($id_cliente, $fecha_evento,$fecha_emision){
+		global $db;
+
+		$status	= 1;
+
+		
+		try {
+			$st = $db->prepare("INSERT INTO `presupuesto` (`id_cliente`, `fecha_emision`, `status`, `fecha_evento`) VALUES ('$id_cliente', '$fecha_emision', '$status', '$fecha_evento')");
+			$st->execute();
+			$result = $db->lastInsertId();
+		}
+		catch(PDOException $e) {
+			$result = $e->getMessage();
+		}
+
+		return $result;	
+
+	}
+
+
+	public static function insertDetail($id_presupuesto,$id_producto,$id_color,$cantidad,$precio_total,$nrofact,$fecha){
+		global $db;
+
+		try {
+			$st = $db->prepare("INSERT INTO `detalles` ( `id_presupuesto`, `id_producto`, `id_color`, `cantidad`, `precio_total`, `nrofact`, `fecha`) VALUES ( '$id_presupuesto','$id_producto','$id_color','$cantidad','$precio_total','$nrofact','$fecha')");
+			$st->execute();
+			$result = $db->lastInsertId();
+		}
+		catch(PDOException $e) {
+			$result = $e->getMessage();
+		}
+
+		return $result;			
+
+	}
+
+
+
+
+
+
+	public static function updateStockProduc($id_producto, $cantidad){
+		global $db;
+
+		$st = $db->prepare("UPDATE `productos` SET `stock`=stock-$cantidad WHERE (`id_producto`='$id_producto')");
+
+
+		return $st->execute();			
+
+	}
+
+
 }
 
 ?>

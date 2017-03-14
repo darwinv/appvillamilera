@@ -14,6 +14,7 @@ require_once "includes/controllers/home.controller.php";
 require_once "includes/controllers/shop.controller.php";
 require_once "includes/controllers/gallery.controller.php";
 require_once "includes/controllers/category.controller.php";
+require_once "includes/controllers/detail.controller.php";
 
 
 // This will allow the browser to cache the pages of the store.
