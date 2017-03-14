@@ -5,16 +5,24 @@ text-align: center;
 
 h1{
   font-size: 23px !important;
-font-style: initial;
-font-family: roboto;
-    color: ivory;
+  font-style: initial;
+  font-family: roboto;
+  color: ivory;
 }
+
 h4{
-font-style: initial;
-font-family: roboto;
+    font-style: initial;
+    font-family: roboto;
     color: ivory;
-    
 }
+
+h4.titulo2{
+  text-align: center;
+  font-style: initial;
+  font-family: roboto;
+  color: #006400;
+}
+
 .box{
     margin:10px;
 }
@@ -64,9 +72,6 @@ div.incli-der{
   width: 20% !important;
   display: inline-flex !important;
 }
-
-
-
 
 .col-xs-10,.col-xs-2{
   float: left;
@@ -127,3 +132,12 @@ div.incli-der{
     background-color: #f2dede;
     border-color: #ebccd1;
 }
+
+
+div.description{
+  background-color: white;
+  padding: 10%;
+  text-align: justify;
+  margin: 1%;
+}
+
