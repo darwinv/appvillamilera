@@ -36,9 +36,12 @@ $(document).ready(function(){
 		if ($(this).is(':checked')){
 
 			carrito.push({"id":id,"color":color,"color_id":color_id,"cantidad":cantidad,"preciototal":preciototal,"name":name});		
-		
+			$('#colores_'+id).prop('disabled', true);
+			$('#number-pattern_'+id).prop('disabled', true);
 		}else{			
 			carrito.splice(carrito.indexOf('id'),id);
+			$('#colores_'+id).prop('disabled', false);
+			$('#number-pattern_'+id).prop('disabled', false);
 		}
 
 		console.log(carrito);
