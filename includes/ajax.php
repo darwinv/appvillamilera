@@ -14,7 +14,7 @@ if ($_POST['action']=='save_quote') {
 	$a 				= explode('-',$_POST['fecha_evento']);
 	$fecha_evento 	= $a[2].'-'.$a[1].'-'.$a[0];
 	$result 		= '';
-
+	$id_presupuesto = '';
 
 	
 
@@ -48,7 +48,7 @@ if ($_POST['action']=='save_quote') {
 		}
 	}
 
-	echo (json_encode ( array('result'=> $result) ));
+	echo (json_encode ( array('result'=> $result,'id'=> $id_presupuesto) ));
 }
 
 ?>

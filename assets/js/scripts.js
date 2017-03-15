@@ -44,7 +44,6 @@ $(document).ready(function(){
 			$('#number-pattern_'+id).prop('disabled', false);
 		}
 
-		console.log(carrito);
 		// body...
 	});
  
@@ -78,7 +77,7 @@ function sendData(car){
 	  success: function(data)
       {
       	if (data.result == 'Ok') {
-      		window.location.href="?send_quote&status=successful";
+      		window.location.href="?send_quote&status=successful&id="+data.id;
       	}else{
       		window.location.href="?send_quote&status=fail";
       	}
