@@ -12,10 +12,19 @@
 
 <div class="description">
 <p>
-Lorem iptsum Loreum Lorem iptsum Loreum Lorem iptsum Loreum Lorem iptsum Loreum 
-Lorem iptsum Loreum Lorem iptsum Loreum 
-Lorem iptsum Loreum Lorem iptsum Loreum Lorem iptsum Loreum Lorem iptsum Loreum 
-Lorem iptsum Loreum Lorem iptsum Loreum 
+Villa Milera, surge como una pequeña empresa familiar fundada en el año 2013,
+iniciándose como una Agencia  destinada a prestar Servicios de alquileres de festejos y  
+decoraciones, de allí fue creciendo y ampliando sus recursos e instaló su oficina en la
+carretera nacional vía Elorza, sector la Arenosa Guasdualito, Estado Apure donde aún se mantiene
+y llevan a cabo sus funciones. 
+Actualmente la empresa cuenta con una amplia gama de productos, servicios, y equipos para los eventos,
+nuestro objetivo es ofrecer al cliente un servicio de calidad que cumpla con sus exigencias y necesidades
+y que al mismo tiempo nos permita competir en mercado regional. 
+Con el transcurso de los años hemos incorporado nuevas líneas de productos con el 
+objetivo de proveer a nuestros clientes un mejor Servicio con Responsabilidad y Compromiso
+y así cubrir las necesidades requeridas.
+También se cuenta con un excelente grupo humano
+capacitado ante los cambios e innovaciones que se presenten en nuestro ámbito laboral
 </p>
 </div>
 
