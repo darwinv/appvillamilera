@@ -49,9 +49,7 @@ $(document).ready(function(){
 		if($("#cont-detail-view").length != 0) { //si existe el ID
 		  	create_detail(carrito);
 		}
-		if($("#message-detail-view").length != 0) { //si existe el ID
-		  	sendData(carrito);
-		}
+		
 	});
 
 	$(document).on('click','#submit-3',function(){
