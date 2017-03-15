@@ -138,6 +138,9 @@ div.description{
   background-color: white;
   padding: 10%;
   text-align: justify;
-  margin: 1%;
+  margin: 1%;  
+  font-family: ubuntu;
+  line-height: 15pt;
+  font-size: 0.8em;
 }
 
