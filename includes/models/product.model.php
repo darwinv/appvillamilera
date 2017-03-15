@@ -24,7 +24,18 @@ class Product{
 		return $sta->fetchAll(PDO::FETCH_CLASS, "Product");
 	}
 
+	
 
+	public static function getLastPresupuesto(){
+		global $db;
+		
+		$sta = $db->prepare("select max(id_presupuesto) as last_id from presupuesto");
+		
+		
+		$sta->execute($arr);
+		
+		return $sta->fetchAll(PDO::FETCH_CLASS, "Product");
+	}
 	public static function getColorsByProduct($id){
 			global $db;
 		
@@ -47,11 +58,13 @@ class Product{
 		
 		try {
 			$st = $db->prepare("INSERT INTO `presupuesto` (`id_cliente`, `fecha_emision`, `status`, `fecha_evento`) VALUES ('$id_cliente', '$fecha_emision', '$status', '$fecha_evento')");
+
 			$st->execute();
 			$result = $db->lastInsertId();
 		}
 		catch(PDOException $e) {
-			$result = $e->getMessage();
+			//var_dump($e->getMessage());
+			$result = '';
 		}
 
 		return $result;	
@@ -68,7 +81,8 @@ class Product{
 			$result = $db->lastInsertId();
 		}
 		catch(PDOException $e) {
-			$result = $e->getMessage();
+			//var_dump($e->getMessage());
+			$result = '';
 		}
 
 		return $result;			

@@ -58,9 +58,6 @@ $(document).ready(function(){
 	  sendData(carrito);
 	 });
 
-	 $(document).on('click','.send',function(){
-	  sendData(carrito);
-	 });
 });
 
 function sendData(car){
