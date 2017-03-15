@@ -16,8 +16,10 @@ function start_pedido(){
 
 $(document).ready(function(){
 	var carrito = [];
-	$('.check_pedido').change(function() {
-		//$(this).data("id")
+
+	$(document).on('change','.check_pedido',function(){
+	  
+		
 		var id = $(this).data("id");
 
 		var preciounitario = $('#product_'+id).data("price");		
@@ -39,6 +41,7 @@ $(document).ready(function(){
 			carrito.splice(carrito.indexOf('id'),id);
 		}
 
+		console.log(carrito);
 		// body...
 	});
  
@@ -49,7 +52,7 @@ $(document).ready(function(){
 		if($("#cont-detail-view").length != 0) { //si existe el ID
 		  	create_detail(carrito);
 		}
-		
+
 	});
 
 	$(document).on('click','#submit-3',function(){
