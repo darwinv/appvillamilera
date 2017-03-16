@@ -44,17 +44,14 @@ width: 100%;
  background-color: #FFFFEF;   
 }
 
-div.incli-izq{
-  -moz-transform: rotate(-7deg);
-  -webkit-transform: rotate(-7deg); /* Chrome, Safari, Opera */
-  transform: rotate(-7deg);
+.opciones{
+    margin-bottom: 11%;
 }
 
-div.incli-der{
-  -moz-transform: rotate(2deg);
-  -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
-  transform: rotate(2deg);
+.opciones .ui-btn {
+  font-size: 55%;
 }
+
 
 .img-home{  
     text-align: center;
@@ -65,7 +62,7 @@ div.incli-der{
 
 .ui-grid-b img {
     margin: auto;
-    width: 90%;
+    width: 95%;
 }
 
 .ui-input-text .ui-mini{

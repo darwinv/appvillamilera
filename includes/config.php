@@ -12,7 +12,7 @@ $db_name = 'villa_milera_m';
 
 /*=========== Website Configuration ==========*/
 
-$defaultTitle = 'Mobile Computer Store';
-$defaultFooter = date('Y').' &copy; Computer Store';
+$defaultTitle = 'Asoc Cooperativa';
+$defaultFooter = date('Y').' &copy; Villa Milera';
 
 ?>

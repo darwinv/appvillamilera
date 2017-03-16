@@ -5,7 +5,7 @@
       <div class="img-home"> <img src="assets/imgs/globos.png" alt=""> </div>
     
     </div>
-    <div class="ui-block-b">
+    <div class="ui-block-b"  style="margin-bottom: 8%;">
        <!-- <div class="ui-bar ui-bar-b" style="height:200px">  -->
         <h2>Villa Milera</h2>
             <div class="img-home"> <img src="assets/imgs/coop.png" alt=""> </div>
@@ -19,7 +19,7 @@
 </div>
 
 
-<div class="ui-grid-b">
+<div class="ui-grid-b opciones">
     <div class="ui-block-a">
         <div class="ui-bar ui-bar-b" > 
             <img src="assets/imgs/purchase-bag.png"> <p><a href="?shop" class="ui-btn ui-corner-all">Pedidos </a></p> </div>
@@ -28,7 +28,7 @@
     <div class="ui-block-b">
         <div class="ui-bar ui-bar-b" > 
             <img src="assets/imgs/photos.png">
-        <p><a href="?gallery" class="ui-btn ui-corner-all">Galeria de Eventos </a></p>
+        <p><a href="?gallery" class="ui-btn ui-corner-all">Galeria</a></p>
         </div>
     </div>
     <div class="ui-block-c">
