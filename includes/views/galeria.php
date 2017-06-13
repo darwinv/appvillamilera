@@ -1,7 +1,7 @@
 <?php render('_header',array('title'=>$title))?>
 
 
- <h2>Galeria</h2>
+ <h2>Galería</h2>
     <div class="galeria"> 
     
     <div class="ui-grid-c">

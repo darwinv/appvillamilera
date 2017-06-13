@@ -2,7 +2,7 @@
 
 	<h2>Ingrese sus datos</h2>
 
-     <label for="cedula">Ingrese Cedula:</label>
+     <label for="cedula">Ingrese Cédula:</label>
      <input name="cedula" id="cedula" value="" type="text">
   	<label for="date-input">  Fecha del Pedido: </label>
 	<input type="text" id="date-input" data-date-format="dd-mm-yy" data-inline="true" data-role="date">

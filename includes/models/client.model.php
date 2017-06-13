@@ -27,12 +27,13 @@ class Client{
 			$st = $db->prepare("INSERT INTO `clientes` (`id_cliente`, `nombrecliente`, `apellidocliente`, `dircliente`, `telefcliente`) VALUES ('$id_cliente', '$nombrecliente', '$apellidocliente', '$dircliente', '$telefcliente')");
 			
 			$st->execute();
-			$result = $db->lastInsertId();
+			$result = $db->lastInsertId();		
 		}
 		catch(PDOException $e) {
 			$result = $e->getMessage();
 		}
-
+	var_dump($result);
+	die();
 		return $result;	
 
 	}

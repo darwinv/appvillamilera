@@ -21,7 +21,7 @@ if ($_POST['action']=='save_quote') {
 	$arrClient = Client::getClient($cliente);
 
 
-	if (empty($client[0])) {
+	if (empty($arrClient[0])) {
 		(Client::insertClient($cliente));
 	}
 
@@ -33,11 +33,17 @@ if ($_POST['action']=='save_quote') {
 		$id_presupuesto = (Product::insertQuote($cliente,$fecha_evento,$fecha));
 
 		foreach ($car as $key => $value) {
+			if(empty($value['color_id'])){
+				$color = 0;
+			}else{
+				$color = $value['color_id'];
+			}
+
 			$id_producto	= $value['id']; 
-			$id_color		= $value['color_id'];
+			$id_color		= $color;
 			$cantidad		= $value['cantidad'];
 			$precio_total	= $value['preciototal'];
-			//$nrofact		= $value[''];
+			//$nrofact		= $value[''];		
 
 			(Product::insertDetail($id_presupuesto,$id_producto,$id_color,$cantidad,$precio_total,$nrofact,$fecha));
 			(Product::updateStockProduc($id_producto, $cantidad));

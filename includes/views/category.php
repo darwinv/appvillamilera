@@ -8,7 +8,7 @@
 
 <div class="leftColumn">
     <ul data-role="listview" data-inset="true" data-theme="c" data-dividertheme="b">
-        <li data-role="list-divider">Categories</li>
+        <li data-role="list-divider">Categor&iacute;as</li>
         <?php render($categories,array('active'=>$_GET['category'])) ?>
     </ul>
 </div>

@@ -22,18 +22,20 @@
 <div class="ui-grid-b opciones">
     <div class="ui-block-a">
         <div class="ui-bar ui-bar-b" > 
-            <img src="assets/imgs/purchase-bag.png"> <p><a href="?shop" class="ui-btn ui-corner-all">Pedidos </a></p> </div>
+        <a href="?shop"><img src="assets/imgs/purchase-bag.png"> </a> 
+         <p><a href="?shop" class="ui-btn ui-corner-all">Pedidos </a></p> </div>
     
     </div>
     <div class="ui-block-b">
         <div class="ui-bar ui-bar-b" > 
-            <img src="assets/imgs/photos.png">
-        <p><a href="?gallery" class="ui-btn ui-corner-all">Galeria</a></p>
+          <a href="?gallery"><img src="assets/imgs/photos.png"></a>  
+        <p><a href="?gallery" class="ui-btn ui-corner-all">Galer&iacute;a</a></p>
         </div>
     </div>
     <div class="ui-block-c">
         <div class="ui-bar ui-bar-b" > 
-            <img src="assets/imgs/info.png"> <p><a href="?social" class="ui-btn ui-corner-all">Información </a></p>
+        <a href="?social"><img src="assets/imgs/info.png"></a>
+             <p><a href="?social" class="ui-btn ui-corner-all">Informaci&oacute;n </a></p>
         </div>
     </div>
 </div>

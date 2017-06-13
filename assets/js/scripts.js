@@ -95,7 +95,7 @@ function create_detail(car){
 	car.forEach(function(entry) {
 		html += '<div class="ui-btn ui-corner-all ui-btn-inherit '+classes+'"><div class="col-xs-10">';
 		html += entry.name+' Color '+entry.color+' x'+entry.cantidad;
-		html +=	'</div><div class="col-xs-2">$'+entry.preciototal+'</div></div>';
+		html +=	'</div><div class="col-xs-2">Bs. '+entry.preciototal+'</div></div>';
 
 		total += parseFloat(entry.preciototal);
 
@@ -104,7 +104,7 @@ function create_detail(car){
 		classes = '';
 	});
 
-	html += '<div class="ui-btn ui-corner-all ui-btn-inherit ui-last-child"><div class="col-xs-10 text-right">Total: &nbsp;</div><div class="col-xs-2 " id="total_quote">$'+total+'</div></div>';
+	html += '<div class="ui-btn ui-corner-all ui-btn-inherit ui-last-child"><div class="col-xs-10 text-right">Total: &nbsp;</div><div class="col-xs-2 " id="total_quote">Bs. '+total+'</div></div>';
 
 	$("#cont-detail-view").append(html);
 

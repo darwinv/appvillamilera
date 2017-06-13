@@ -1,11 +1,13 @@
 <?php  
 	$colores 	= Product::getColorsByProduct($product->id_producto); 
 	$cantidad 	= $product->stock?:0;
+
+	$nombreProducto = Product::replaceAcents($product->nombre);
 ?> 
 <li class="product" id="product_<?php echo $product->id_producto; ?>" data-price="<?php echo $product->precio_unitario;?>">
 	<img src="assets/img/<?php echo $product->id_producto ?>.jpg" alt="<?php echo $product->nombre ?>" />
-	<label id="name_<?php echo $product->id_producto; ?>"> <?php echo $product->nombre ?> </label>
-	<b>$<?php echo $product->precio_unitario?></b>
+	<label id="name_<?php echo $product->id_producto; ?>"> <?php echo $nombreProducto ?> </label>
+	<b>Bs. <?php echo $product->precio_unitario?></b>
 
 	<input onchange="maxValue(this,'<?php echo $cantidad;?>')" data-inline="true" name="number" id="number-pattern_<?php echo $product->id_producto; ?>" min="1" value="" placeholder="Cantidad hasta <?php echo $cantidad;?>" data-mini="true" type="number" max="<?php echo $cantidad;?>" >
 	<label for="colores"></label>

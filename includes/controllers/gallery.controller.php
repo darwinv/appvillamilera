@@ -10,7 +10,7 @@ class GalleryController{
 		
 		
 		render('galeria',array(
-			'title'		=> 'Galeria de Eventos',
+			'title'		=> 'Galería de Eventos',
 			'content'	=> 'nada'
 		));
 	}

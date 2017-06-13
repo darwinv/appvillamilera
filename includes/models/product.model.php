@@ -49,6 +49,23 @@ class Product{
 
 	}
 
+	public static function replaceAcents($texto1) {
+
+//Rememplazamos caracteres especiales latinos minusculas
+$find = array('á', 'é', 'í', 'ó', 'ú', 'ñ');
+$repl = array('&aacute;', '&eacute;', '&iacute;', '&oacute;', '&uacute;', '&ntilde;');
+$texto1 = str_replace ($find, $repl, $texto1);
+
+
+//Rememplazamos caracteres especiales latinos mayusculas
+$find = array('Á', 'É', 'Í', 'Ó', 'Ú', 'Ñ');
+$repl = array('&Aacute;', '&Eacute;', '&Iacute;', '&Oacute;', '&Uacute;', '&Ntilde;');
+$texto1 = str_replace ($find, $repl, $texto1);
+
+return $texto1;
+
+}  
+
 
 	public static function insertQuote($id_cliente, $fecha_evento,$fecha_emision){
 		global $db;
@@ -58,12 +75,12 @@ class Product{
 		
 		try {
 			$st = $db->prepare("INSERT INTO `presupuesto` (`id_cliente`, `fecha_emision`, `status`, `fecha_evento`) VALUES ('$id_cliente', '$fecha_emision', '$status', '$fecha_evento')");
-
+			
 			$st->execute();
 			$result = $db->lastInsertId();
 		}
 		catch(PDOException $e) {
-			//var_dump($e->getMessage());
+			
 			$result = '';
 		}
 
@@ -77,11 +94,12 @@ class Product{
 
 		try {
 			$st = $db->prepare("INSERT INTO `detalles` ( `id_presupuesto`, `id_producto`, `id_color`, `cantidad`, `precio_total`, `nrofact`, `fecha`) VALUES ( '$id_presupuesto','$id_producto','$id_color','$cantidad','$precio_total','$nrofact','$fecha')");
+			
 			$st->execute();
 			$result = $db->lastInsertId();
 		}
 		catch(PDOException $e) {
-			//var_dump($e->getMessage());
+			var_dump($e->getMessage());
 			$result = '';
 		}
 
@@ -98,8 +116,6 @@ class Product{
 		global $db;
 
 		$st = $db->prepare("UPDATE `productos` SET `stock`=stock-$cantidad WHERE (`id_producto`='$id_producto')");
-
-
 		return $st->execute();			
 
 	}
